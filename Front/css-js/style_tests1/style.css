@@ -1,0 +1,243 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    text-align: center;
+}
+.div {
+    margin: 10px;
+    height: 50px;
+    width: 210px;
+    border-radius: 25px;
+    background-color: red;
+}
+div#oi0 {
+    background-image: linear-gradient(to right, #a9f1df, #ffbbbb);
+}
+div#oi1 {
+    background-image: linear-gradient(to right, #d8b5ff, #1eae98);
+}
+div#oi2 {
+    background-image: linear-gradient(to right, #bff098, #6fd6ff);
+}
+div#oi3 {
+    background-image: linear-gradient(to right, #c6ea8d, #fe90af);
+}
+div#oi4 {
+    background-image: linear-gradient(to right, #f1eab9, #ff8c8c);
+}
+div#oi5 {
+    background-image: linear-gradient(to right, #ea8d8d, #a890fe);
+}
+div#oi6 {
+    background-image: linear-gradient(to right, #00b7ff, #ffffc7);
+}
+div#oi7 {
+    background-image: linear-gradient(to right, #fca5f1, #b5ffff);
+}
+div#oi8 {
+    background-image: linear-gradient(to right, #d74177, #ffe98a);
+}
+div#oi9 {
+    background-image: linear-gradient(to right, #38adae, #cd295a);
+}
+.teste {
+    background-color: transparent;
+    margin: 10px auto;
+    width: 500px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teste p {
+    z-index: 2;
+}
+.teste:hover {
+    transition: 1s;
+}
+.teste::before {
+    content: '';
+    position: absolute;
+    margin-top: calc(5%-5%);
+    margin-left: calc(5%-5%);
+    width: 450px;
+    height: 45px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+.teste::after {
+    content: '';
+    position: absolute;
+    margin-top: calc(5%-5%);
+    margin-left: calc(1%-1%);
+    width: 490px;
+    height: 45px;
+    background-color: red;
+    border-radius: 25px;
+}
+.teste:hover:before {
+    border: 1px solid red;
+    margin-left: 0%;
+    margin-top: 0%;
+    width: 520px;
+    height: 70px;
+    transition: 1s;
+}
+.gradient {
+    height: 200px;
+    border: 1px solid grey;
+}
+.inside {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 10px auto;
+    height: 50px;
+    width: 250px;
+}
+.fundo {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #38adae, #cd295a);
+}
+.inside .ok {
+    height: 44px;
+    width: 224px;
+    border-radius: 22px;
+    border: none;
+    background-color: lightgrey;
+    color: black;
+    z-index: 2;
+    outline: none !important;
+    padding: 0px 10px;
+}
+.inside .ok:focus {
+    background-color: black;
+    color: white;
+}
+.letter {
+    display: inline-block;
+    margin: 10px;
+    color: #fff;
+    transition: 1000ms;
+    cursor: default;
+}
+.letter:hover {
+    cursor: default;
+    transition: 0ms;
+    color: #000;
+}
+
+.grade-circulo, .grade-circulo2 {
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    padding: 5vh;
+    align-items: center; flex-wrap: wrap;
+}
+.grade-circulo2 {
+    background: #3e3e3e;
+}
+.circulo-grande {
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+    transition: 1000ms;
+}
+.dentro {
+    z-index: 2;
+    transition: 1000ms;
+    top: 0px !important;
+    left: 0px !important;
+}
+.circulo-grande div {
+    position: absolute;
+}
+.circulo1 {
+    background-color: red;
+    left: -510px;
+    top: 0px;
+}
+.circulo2 {
+    background-color: blue;
+    top: -510px;
+}
+.circulo3 {
+    background-color: green;
+    left: 510px;
+    top: 0px;
+}
+.circulo4 {
+    background-color: grey;
+    top: 510px;
+}
+.pequeno, .pequeno2 {
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+}
+.pequeno2{
+    border: 1px solid #FFF !important;
+}
+
+.circulo-grande2 {
+    overflow: hidden;
+    position: relative;
+    border-radius: 250px;
+    transition: 1000ms;
+}
+.central {
+    overflow: hidden;
+    position: relative;
+    border-radius: 250px;
+    transition: 1000ms;
+    height: 500px;
+    width: 500px;
+}
+.dentro2 {
+    z-index: 2;
+    height: 500px !important;
+    width: 500px !important;
+    transition: 1000ms;
+}
+.circulo-grande2 div {
+    position: absolute;
+}
+.circulo12 {
+    background-color: red;
+    width: 0px;
+    height: 500px;
+    left: 0px;
+}
+.circulo22 {
+    background-color: blue;
+    width: 500px;
+    height: 0px;
+    top: 0px;
+}
+.circulo32 {
+    background-color: green;
+    width: 0px;
+    height: 500px;
+    right: 0px;
+}
+.circulo42 {
+    background-color: grey;
+    width: 500px;
+    height: 0px;
+    bottom: 0px;
+}
